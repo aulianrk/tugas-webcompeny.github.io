@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PT. Cita Rasa Resto</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif;}
+    body {background: #fdfdfd; color: #333;}
+
+    /* Header */
+    header {
+      background: #8B0000;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {font-size: 22px;}
+    nav a {color: #fff; margin-left: 20px; text-decoration: none; font-weight: bold;}
+    nav a:hover {text-decoration: underline;}
+
+    /* Hero */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 480px; display: flex; align-items: center; justify-content: center;
+      color: #fff; text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      font-size: 38px; font-weight: bold; text-align: center; padding: 20px;
+    }
+
+    /* Section */
+    section {max-width: 1200px; margin: auto; padding: 60px 20px;}
+    section h2 {text-align: center; color: #8B0000; margin-bottom: 40px; font-size: 30px;}
+
+    .about {text-align: center; margin-bottom: 50px;}
+    .about p {font-size: 16px; line-height: 1.8; max-width: 800px; margin: auto;}
+
+    /* Menu */
+    .menu {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;}
+    .menu-card {background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s;}
+    .menu-card:hover {transform: translateY(-6px); box-shadow: 0 6px 15px rgba(0,0,0,0.2);}
+    .menu-card img {width: 100%; height: 200px; object-fit: cover;}
+    .menu-card div {padding: 20px;}
+    .menu-card h3 {color: #8B0000; margin-bottom: 8px;}
+
+    /* Projects */
+    .projects {display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;}
+    .project {background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);}
+    .project img {width: 100%; height: 180px; object-fit: cover;}
+    .project div {padding: 15px;}
+    .project h4 {color: #8B0000; margin-bottom: 8px;}
+
+    /* Testimonials */
+    .testimonials {background: #ffecec; border-radius: 12px; padding: 40px; text-align: center;}
+    .testimonial {margin-bottom: 25px;}
+    .testimonial p {font-style: italic;}
+
+    /* Reservation */
+    .reservation {background: #fdf5f5; padding: 40px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);}
+    .reservation form {display: grid; gap: 15px; max-width: 500px; margin: auto;}
+    .reservation input, .reservation textarea, .reservation select {
+      padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 15px;
+    }
+    .reservation button {
+      padding: 14px; background: #8B0000; color: #fff; border: none; border-radius: 8px; cursor: pointer; font-weight: bold;
+    }
+    .reservation button:hover {background: #a30000;}
+
+    /* Footer */
+    footer {background: #8B0000; color: #fff; text-align: center; padding: 25px; margin-top: 40px;}
+    footer p {margin: 6px 0; font-size: 14px;}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>PT. Cita Rasa Resto</h1>
+    <nav>
+      <a href="#about">Tentang</a>
+      <a href="#menu">Menu</a>
+      <a href="#projects">Projek</a>
+      <a href="#reservasi">Reservasi</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <div class="hero">
+    Nikmati Hidangan Terbaik di Cita Rasa Resto
+  </div>
+
+  <!-- Tentang -->
+  <section id="about" class="about">
+    <h2>Tentang Kami</h2>
+    <p>
+      PT. Cita Rasa Resto adalah perusahaan restoran yang telah berdiri sejak tahun 2010, menghadirkan pengalaman kuliner terbaik dengan cita rasa nusantara dan internasional. Kami telah berhasil mengembangkan berbagai cabang dan melayani ribuan pelanggan setia.
+    </p>
+  </section>
+
+  <!-- Menu Andalan -->
+  <section id="menu">
+    <h2>Menu Andalan</h2>
+    <div class="menu">
+      <div class="menu-card">
+        <img src="images/gambar1.webp" alt="Steak">
+        <div>
+          <h3>Steak Premium</h3>
+          <p>Daging sapi pilihan dengan saus spesial khas resto kami.</p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="images/gambar2.webp" alt="Seafood">
+        <div>
+          <h3>Seafood Platter</h3>
+          <p>Udang, cumi, dan ikan segar disajikan dengan bumbu rempah.</p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="images/gambar3.jpg" alt="Dessert">
+        <div>
+          <h3>Dessert Manis</h3>
+          <p>Berbagai pilihan dessert yang manis dan menggugah selera.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projek Restoran -->
+  <section id="projects">
+    <h2>Projek & Cabang Restoran</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cabang Jakarta">
+        <div>
+          <h4>Cabang Jakarta</h4>
+          <p>Restoran flagship dengan konsep modern elegan.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="images/gambar5.webp" alt="Cabang Bali">
+        <div>
+          <h4>Cabang Bali</h4>
+          <p>Restoran dengan nuansa tropis, cocok untuk wisatawan.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="images/gambar6.webp" alt="Event Catering">
+        <div>
+          <h4>Cabang Yogyakarta</h4>
+          <p>Melayani berbagai acara perusahaan & pernikahan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section class="testimonials">
+    <h2>Testimoni Pelanggan</h2>
+    <div class="testimonial">
+      <p>"Makan malam di Cita Rasa Resto sungguh luar biasa, pelayanan ramah dan makanan enak!"</p>
+      <strong>- Dian, Jakarta</strong>
+    </div>
+    <div class="testimonial">
+      <p>"Restoran terbaik yang pernah saya kunjungi. Konsep interiornya keren banget."</p>
+      <strong>- Budi, Surabaya</strong>
+    </div>
+  </section>
+
+  <!-- Reservasi -->
+  <section id="reservasi" class="reservation">
+    <h2>Reservasi Meja</h2>
+    <form>
+      <input type="text" placeholder="Nama Lengkap" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Nomor Telepon" required>
+      <select required>
+        <option value="">Jumlah Orang</option>
+        <option value="2">2 Orang</option>
+        <option value="4">4 Orang</option>
+        <option value="6">6 Orang</option>
+        <option value="10">10 Orang</option>
+      </select>
+      <input type="date" required>
+      <textarea rows="4" placeholder="Catatan Tambahan"></textarea>
+      <button type="submit">Pesan Sekarang</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>&copy; 2025 PT. Cita Rasa Resto</p>
+    <p>Alamat: Jl. Kuliner No. 99, Jakarta</p>
+    <p>Email: info@citarasaresto.co.id | Telp: (021) 888-5678</p>
+  </footer>
+
+</body>
+</html>
